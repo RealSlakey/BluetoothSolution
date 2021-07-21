@@ -35,6 +35,6 @@
 如果使用家庭版，那么则无法通过组策略设置来关闭驱动自动更新，就要用到注册表，具体步骤如下：
 
 1. 在Cortana搜索栏输入regedit后按回车键进入"注册表编辑"
-2. 定位到```HKEY_LOCAL_MACHINESOFTWAREPoliciesMicrosoftWindowsWindowsUpdate```
+2. 定位到```HKEY_LOCAL_MACHINESOFTWARE\Policies\Microsoft\Windows\WindowsUpdate```
 3. 在右侧空白处单击右键，新建"DWORD（32位）值"，命名为```ExcludeWUDriversInQualityUpdate```
 4. 双击打开新建的值，修改数值数据为```1```，点击"确定"。
