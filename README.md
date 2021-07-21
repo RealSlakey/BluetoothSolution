@@ -10,7 +10,7 @@
 2. 请提前配置 `Devcon` 文件夹内 `device.txt` 内容，device.txt为蓝牙设备的硬件ID(Hardware ID)，硬件ID可到设备管理器找到对应设备-属性-详细信息-硬件ID。例如，作者所用AX200的蓝牙异常时的硬件ID：`USB\VID_8087&PID_0029`，若同为走USB端口的蓝牙设备应也是带有 `USB` 字样的
 3. 首次运行请在蓝牙异常状态下进行，以便随时终止服务。在蓝牙异常状态下以管理员权限运行 `服务配置器.exe` ，安装服务，并启动服务进行测试，
 4. 若测试无法正确处理请及时停止并卸载服务，尝试在蓝牙驱动异常时获取硬件ID（可能需要手动重启以达到该状态）修改配置后重试
-5. 如有别的问题欢迎评论或提问[issues](https://github.com/RealSlakey/BluetoothSolution/issues)、
+5. 如有别的问题欢迎评论或提问[issues](https://github.com/RealSlakey/BluetoothSolution/issues)
 
 ![krdtvkk3.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/1213874442.png)
 
