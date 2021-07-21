@@ -1,4 +1,4 @@
-# BlueToothSolution
+# BluetoothSolution
 解决Windows重启后，蓝牙驱动总是抽风的问题（自用蓝牙设备是AX200无线网卡带的，走USB端口）。
 
 # 新解决方案
