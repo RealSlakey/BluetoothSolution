@@ -7,9 +7,6 @@
 ![krdtwik2.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/747918817.png)
 ![krdu0fhh.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/3547185376.png)
 ![krdu0rc5.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/2309865507.png)
-![krdu0zrp.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/3946674806.png)
-
-
 
 ## 使用步骤：
 1. 请保证运行目录无中文存在，确保 `BluetoothSolution.exe` 与子文件夹 `Devcon` 在同一文件夹内
