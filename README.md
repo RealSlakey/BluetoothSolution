@@ -3,15 +3,22 @@
 
 # 新解决方案
 由于使用MS Community的解决方案也无法很好的对该蓝牙问题进行处理，看设备事件应该是USBhub的驱动和蓝牙设备驱动加载顺序不合理导致的问题（偶尔开机未登录时可以自动连上蓝牙外设，随后断开，登陆进入桌面后就显示驱动异常，根据下文中我发现的临时解决方案可解决，不知道是不是首发），故根据临时解决方案快速写了个以系统服务形式，开机自启后判断蓝牙是否正常，不正常则通过Devcon进行设备重新装载后停止服务，正常则直接停止服务。
+![krdtvkk3.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/1213874442.png)
+![krdtwik2.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/747918817.png)
+![krdu0fhh.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/3547185376.png)
+![krdu0rc5.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/2309865507.png)
+![krdu0zrp.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/3946674806.png)
 
-## 使用说明：
-1. 请保证运行目录无中文存在，若失败请尝试使用管理员权限运行
-2. 请提前配置Devcon文件夹中device.txt内容，方法如下
-3. device.txt为蓝牙设备的硬件ID(Hardware ID)
-4. 硬件ID可到设备管理器找到对应设备-属性-详细信息-硬件ID，例如，作者所用AX200的蓝牙硬件ID：USB\VID_8087&PID_0029
-5. 如无法自动重装驱动，请在重启后蓝牙驱动异常时，获取硬件ID
-6. 子文件夹内devcon为程序的关键文件
 
+
+## 使用步骤：
+1. 请保证运行目录无中文存在，确保 `BluetoothSolution.exe` 与子文件夹 `Devcon` 在同一文件夹内
+2. 请提前配置 `Devcon` 文件夹内 `device.txt` 内容，device.txt为蓝牙设备的硬件ID(Hardware ID)，硬件ID可到设备管理器找到对应设备-属性-详细信息-硬件ID，请注意需要在蓝牙驱动异常时获取硬件ID（可能需要手动重启以达到该状态）。例如，作者所用AX200的蓝牙异常时的硬件ID：`USB\VID_8087&PID_0029`
+3. 以管理员权限运行 `服务配置器.exe` ，并安装服务，在蓝牙异常状态下启动服务进行测试，若无法正确处理请及时停止并卸载服务，重新配置硬件ID后测试，或提[issues](https://github.com/RealSlakey/BluetoothSolution/issues)
+
+## Download
+ [Github项目主页](https://github.com/RealSlakey/BluetoothSolution) 请帮我点亮Star~
+ [GitHub Release](https://github.com/RealSlakey/BluetoothSolution/releases) 
 以下来自我Blog的原文
 # [原文](https://www.slakey.cn/archives/38/)
 ## 症状
