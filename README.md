@@ -3,9 +3,13 @@
 
 # 新解决方案
 由于使用MS Community的解决方案也无法很好的对该蓝牙问题进行处理，看设备事件应该是USBhub的驱动和蓝牙设备驱动加载顺序不合理导致的问题（偶尔开机未登录时可以自动连上蓝牙外设，随后断开，登陆进入桌面后就显示驱动异常，根据下文中我发现的临时解决方案可解决，不知道是不是首发），故根据临时解决方案快速写了个以系统服务形式，开机自启后判断蓝牙是否正常，不正常则通过Devcon进行设备重新装载后停止服务，正常则直接停止服务。
+
 ![krdtvkk3.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/1213874442.png)
+
 ![krdtwik2.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/747918817.png)
+
 ![krdu0fhh.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/3547185376.png)
+
 ![krdu0rc5.png](https://cdn.jsdelivr.net/gh/RealSlakey/spaceofslakey@latest/usr/uploads/2021/07/2309865507.png)
 
 ## 使用步骤：
